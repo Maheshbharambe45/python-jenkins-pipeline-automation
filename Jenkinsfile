@@ -22,7 +22,7 @@ stages{
 
     stage('Running tests'){
         steps{
-            sh 'pytest -q'
+            sh 'python3 -m pytest -q'
         }
     }
 
