@@ -8,7 +8,8 @@ This project demonstrates an end-to-end **CI/CD pipeline**
 
 Ubuntu 20.04 or 22.04 EC2 Instance (t2.medium or higher recommended) <br>
 Minimum 20GB EBS storage (required for Docker + Minikube)<br>
-Security Group must allow:<br>
+#### Security Group must allow:<br>
+
 Port 22 → SSH<br>
 Port 8080 → Jenkins UI (if hosted on same EC2)<br>
 Port 30050 → Kubernetes NodePort Service (for Flask app)<br>
@@ -37,7 +38,6 @@ Or another server that has network access to EC2 <br>
 
 ### Jenkins must have:
 
-Docker CLI installed (to build and push images) <br>
 Pipeline and Git plugins enabled <br>
 Python 3 available (for python3 -m pytest) <br>
 Git installed (for SCM checkout) <br>
@@ -53,15 +53,6 @@ You must configure two credentials inside Jenkins:
 ID: docker-crediantials <br>
 Type: Username + Password <br>  
 Used in Push Image stage of Jenkinsfile <br>
-
-### 🔐 EC2 SSH Key
-
-ID: ec2-ssh-key <br>
-Type: SSH Username with private key <br>
-Username: ubuntu <br>
-Used in Deploy to Minikube on EC2 stage to: <br>
-scp deployment.yml and service.yml <br>
-ssh into EC2 and run kubectl commands <br>
 
 
 ## 🔄 GitHub Auto-Build (Webhook)
