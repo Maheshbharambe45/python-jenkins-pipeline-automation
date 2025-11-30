@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
         - name: python-cicd-app
-          image: mahesh/python-cicd:latest   # replace with your DockerHub repo
+          image: maheshbharambe45/flask_app:latest   
           ports:
             - containerPort: 5000
