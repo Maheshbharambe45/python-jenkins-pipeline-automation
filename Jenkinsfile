@@ -5,7 +5,7 @@ agent any
 environment {
     IMG_NAME = 'maheshbharambe45/flask_app'
     PORT_MAPPING = '8081:5000'
-    MINIKUBE_IP = '3.110.138.250'
+    MINIKUBE_IP = '13.202.43.207'
 }
 
 stages{
