@@ -54,6 +54,14 @@ ID: docker-crediantials <br>
 Type: Username + Password <br>  
 Used in Push Image stage of Jenkinsfile <br>
 
+### 🔐 EC2 SSH Key
+
+ID: ec2-ssh-key <br>
+Type: SSH Username with private key <br>
+@@ -64,7 +64,7 @@ scp deployment.yml and service.yml <br>
+ssh into EC2 and run kubectl commands <br>
+
+![Website Screenshot](assets/Screenshot%202025-11-30%20104131.png)
 
 ## 🔄 GitHub Auto-Build (Webhook)
 
